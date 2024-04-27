@@ -11,4 +11,4 @@
 
 
 #### Dataset :https://github.com/ngovinhtn/JaViCorpus/blob/master/wiki_20K/train.vi JP-VI
-#### Dataset :https://nlp.stanford.edu/projects/nmt/
+#### Dataset :https://nlp.stanford.edu/projects/nmt/  EN-VI
