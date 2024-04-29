@@ -1,7 +1,7 @@
 ## Task:
 
 
-#### Building a machine  model for the Vietnamese Sentiment Analysisr (NLP,Model: Using Artificial Neural Network:CNN) -> Huỳnh Gia Hân
+#### Building a machine  model for the Vietnamese Sentiment Analysis (NLP,Model: Using Artificial Neural Network:CNN) -> Huỳnh Gia Hân
 
 #### Building a machine  model for the Vietnamese Sentiment Analysis  (NLP,Model:  Using Artificial Neural Network: RNN,LSTM) -> Đặng Nguyễn Quang Huy
 
