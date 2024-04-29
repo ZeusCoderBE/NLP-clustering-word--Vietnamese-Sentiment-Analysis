@@ -2,7 +2,7 @@
 
 1. **Vietnamese Sentiment Analysis using CNN**
    - **Responsible Person:** Huỳnh Gia Hân
-   - **Model:** Artificial Neural Network (CNN)
+   - **Model:** Artificial Neural Network (CNN,Data visualization)
    
 2. **Vietnamese Sentiment Analysis using RNN/LSTM**
    - **Responsible Person:** Đặng Nguyễn Quang Huy
