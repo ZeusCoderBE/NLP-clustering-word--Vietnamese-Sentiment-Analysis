@@ -10,5 +10,4 @@
 #### Regression with a machine learning model (EDA:data visualization,data preprocessing,Model) -> Nguyễn Trọng Dũng
 
 
-#### Dataset :https://github.com/ngovinhtn/JaViCorpus/blob/master/wiki_20K/train.vi JP-VI
-#### Dataset :https://nlp.stanford.edu/projects/nmt/  EN-VI
+
