@@ -1,9 +1,6 @@
 ### Workflow: Building a model to analyze customer emotions when buying phones for business purposes
 
-![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/12880277-1f7d-4119-885e-b86f9f931531)
-
-<img width="517" alt="image" src="https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/8190f78c-1ac3-4084-87a0-38bdb24eec44">
-
+![WordFlow-page0001](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/7d6e6922-5540-42e1-9518-9aabb2a6d262)
 
 
 
@@ -11,6 +8,7 @@
 
 
 ![output](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/a733f7c7-0c3c-4b89-a4da-b75a4c616b6c)
+
 
 ### Model : The CNN model analyzes customer sentiment
 
