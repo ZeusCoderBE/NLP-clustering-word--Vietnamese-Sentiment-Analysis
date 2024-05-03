@@ -1,6 +1,7 @@
 ### Workflow: Building a model to analyze customer emotions when buying phones for business purposes
 
-![WordFlow-page0001](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/7d6e6922-5540-42e1-9518-9aabb2a6d262)
+![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/95d65b74-6bc7-409c-9c27-c0d682575bb6)
+
 
 
 
