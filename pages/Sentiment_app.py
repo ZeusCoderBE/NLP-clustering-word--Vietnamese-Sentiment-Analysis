@@ -2,22 +2,21 @@ import streamlit as st
 from tensorflow.keras.models import load_model
 from pyvi import ViTokenizer
 import numpy as np
-import pandas as pd
-import datapreprocessing as pre
+import datapreprocessing.datapreprocessing as pre
 from sklearn.preprocessing import LabelEncoder
 
 # Load the pre-trained model
-model = load_model("../model/model_sentiment_lstm.h5")
+model = load_model("./model/model_sentiment_lstm.h5")
 
 # Load and preprocess the training data
-x_train, y_train = pre.ReadData("../DataPhone/trainprocessed.csv")
+x_train, y_train = pre.ReadData("DataPhone/trainprocessed.csv")
 x_train = pre.wordseparation(x_train)
-x_train_corpus = pre.CreateCorpus(x_train)
+x_train_corpus = pre.CreateCorpus(x_train)  
 
 # Function to preprocess the user input
 def preprocess_comment(comment):
-    comment = pre.remove_punctuation(comment)
-    comment = pre.remove_stopwords(comment)
+    comment = pre.remove_pucntuation(comment)
+    comment = pre.remove_stopword(comment)
     comment = [ViTokenizer.tokenize(comment)]
     separated_meaningful_words = pre.wordseparation(comment)
     return pre.Padding(separated_meaningful_words, x_train_corpus)

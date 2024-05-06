@@ -54,7 +54,7 @@ def remove_pucntuation(comment):
 
   return new_string
 def read_filestopwords():
-    with open('../DataPhone/vietnamese-stopwords.txt', 'r', encoding='utf-8') as file:
+    with open('./DataPhone/vietnamese-stopwords.txt', 'r', encoding='utf-8') as file:
         lines = file.readlines()
         words = [line.split('\n')[0] for line in lines]
     return words
