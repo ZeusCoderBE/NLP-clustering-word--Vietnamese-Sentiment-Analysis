@@ -4,7 +4,10 @@ from pyvi import ViTokenizer
 import numpy as np
 import datapreprocessing.datapreprocessing as pre
 from sklearn.preprocessing import LabelEncoder
+import pyodbc
 
+### Điền server: ví dụ của tui là MSI, điền tên csdl vào database:
+conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=MSI;DATABASE=SalesPhone;Trusted_Connection=yes') 
 # Load the pre-trained model
 model = load_model("./model/model_sentiment_lstm.h5")
 
