@@ -12,7 +12,7 @@ def Padding(Vi,X_train_corpus):
     vi_sequence=X_train_corpus.texts_to_sequences(Vi)
     vi_sequence=pad_sequences(vi_sequence,maxlen=131,padding='pre')
     return vi_sequence
-def CreateCropus(Vi):
+def CreateCorpus(Vi):
     tokenizer=Tokenizer(oov_token='<oov>')
     tokenizer.fit_on_texts(Vi)
     return tokenizer
