@@ -11,24 +11,6 @@
 ![output](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/a733f7c7-0c3c-4b89-a4da-b75a4c616b6c)
 
 
-### Model : The CNN model analyzes customer sentiment
-
-![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/a0efd2b2-2281-461a-b526-cb6227bac7d6)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Tasks:
 
 1. **Vietnamese Sentiment Analysis using CNN**
