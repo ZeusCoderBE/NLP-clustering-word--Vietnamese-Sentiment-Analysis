@@ -1,4 +1,4 @@
-### Workflow: Building a model to analyze customer emotions when buying phones for business purposes
+### Workflow: Applying artificial neural networks to build models to analyze customer emotions based on comments and evaluation serves for determination business-related trends
 
 ![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/95d65b74-6bc7-409c-9c27-c0d682575bb6)
 
