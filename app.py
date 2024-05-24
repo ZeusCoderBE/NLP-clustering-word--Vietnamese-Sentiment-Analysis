@@ -1,66 +1,84 @@
 import streamlit as st
-from function import CRUD as execute
+from function.datapreprocessing import DataPreprocessing
+from function.User_file import User
+import streamlit.components.v1 as components
+from function.UserDao_file import UserDao
 from keras.models import load_model
-from pyvi import ViTokenizer
 import numpy as np
-from function import datapreprocessing as pre
-from sklearn.preprocessing import LabelEncoder
 
-
-# Load and preprocess the training data
-x_train, y_train = pre.ReadData("./DataPhone/trainprocessed.csv")
-x_train = pre.wordseparation(x_train)
-x_train_corpus = pre.CreateCorpus(x_train)
-
-# Function to preprocess the user input
-def preprocess_comment(comment):
-    comment = pre.remove_pucntuation(comment)
-    comment = pre.remove_stopword(comment)
-    comment = [ViTokenizer.tokenize(comment)]
-    separated_meaningful_words = pre.wordseparation(comment)
-    return pre.Padding(separated_meaningful_words, x_train_corpus)
+dp = DataPreprocessing("./data/data_processed/trainprocessed.csv","./data/data_processed/generate.csv")
 
 # Function to predict sentiment
 def predict_sentiment(comment):
-    label_encoder = LabelEncoder()
-    label_encoder.fit_transform(y_train)
-    model = load_model("./model/model_sentiment_lstm.h5")
-    result = model.predict(comment)
+    model_sentiment = load_model("./model/model_sentiment_lstm.h5")
+    result = model_sentiment.predict(comment)
     label_index = np.argmax(result, axis=1)
-    predicted_label = label_encoder.inverse_transform(label_index)
+    predicted_label = dp.labelEn.inverse_transform(label_index)
     return predicted_label
+
+# Function to generate text
+def generate_text(comment):
+    model_generate = load_model("./model/model_lstm_generate_text.h5")
+    temp=""
+    for _ in range(3):
+        comment_processed = dp.fit_transform_generate(comment)
+        predicted_probs = model_generate.predict(comment_processed)
+        word = dp.generate.index_word[np.argmax(predicted_probs)]
+        comment += " " + word
+        temp += " " +word
+    return temp
 
 # Streamlit app for sentiment analysis
 def sentiment_analysis(username):
     st.title("Vietnamese Sentiment Analysis")
-    if execute.get_user_id(username)==1:
+    user_id = User(username)
+    userDao = UserDao()
+    if userDao.get_user_id(user_id) == 1:
         st.write("Hello, admin")
         if st.button("Predict"):
-            comment_of_user= execute.get_comment_by_user()
+            comment_of_user = userDao.get_comment_by_user()
             for comment in comment_of_user:
-                processed_comment = preprocess_comment(comment[0].lower())
-                full_name=execute.get_full_name(comment[0])
-                print(comment[0])
+                processed_comment = dp.fit_transform(comment[0].lower())
+                full_name = userDao.get_full_name(User(comment=comment[0]))
                 prediction = predict_sentiment(processed_comment)
-                prediction = pre.Standardization(prediction)
+                prediction = dp.Standardization(prediction)
                 st.write(f"Hello {full_name},! This is the result of analyzing the results of the comment")
                 st.write(f"'{comment[0]}'")
                 st.write("Sentiment:", prediction)
     else:
-        comment = st.text_area("Enter your comment:")
+        comment_state = st.empty()
+        comment_input = st.text_area("Enter your comment:", key='comment_area')
         st.write(f"Hello, {username}")
+        space_key_js = """
+        <script>
+        document.addEventListener("keydown", function(event) {
+            var commentInput = document.querySelector('textarea[key="comment_area"]');
+            if (event.code === "Space") {
+                return true;
+                }
+            }
+        });
+        </script>
+        """
+        space_key_event = components.html(space_key_js, height=0)
         if st.button("Enter comment"):
-            execute.insert_comment(username, comment)
-            st.success("Comment posted successfully!")
+            userDao.insert_comment(user_id, comment_input)
+            st.success("Comment posted successfully!")  
+        if space_key_event :
+            updated_comment = generate_text(comment_input)
+            comment_state.text(comment_input + updated_comment)
+
+                
 # Streamlit app for login page
 def login_page():
     st.title("Login Page")
     username = st.text_input("Username:", key="username_input")
     password = st.text_input("Password:", type="password", key="password_input")
-
+    user = User(username, password)
+    userDao = UserDao()
     if st.button("Login"):
-        login_success = execute.check_login(username, password)
-        if login_success==1:
+        login_success = userDao.check_login(user)
+        if login_success == 1:
             st.session_state.page = "sentiment_analysis"
             st.session_state.username = username
         else:
