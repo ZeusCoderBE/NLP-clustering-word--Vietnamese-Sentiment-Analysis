@@ -14,14 +14,15 @@
 ### Data Information:
 
 - **Train Data:** 7,786 samples
+- **Dev**: 1,112 samples
 - **Test Data:** 2,224 samples
 - **Link:** [Dataset Repository](https://github.com/LuongPhan/UIT-ViSFD?tab=readme-ov-file)
 
 ### Attribute Information:
-
-1. **comment:** Commentary content
-2. **n_star:** User rating for the smartphone (stars)
-3. **data_time:** Date and time the comment was posted
-4. **label:** Sentiment label of the comment
+1. **id** : the id of comment
+2. **comment:** Commentary content
+3. **n_star:** User rating for the smartphone (stars)
+4. **data_time:** Date and time the comment was posted
+5. **label:** Sentiment label of the comment
 
 
