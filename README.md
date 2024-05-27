@@ -1,6 +1,6 @@
 ### Workflow: Applying artificial neural networks to build models to analyze customer emotions based on comments and evaluation serves for determination business-related trends
 
-![WorkFlow drawio](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/00d90051-0023-4e4d-bc2d-d73e3a4bca2b)
+![WorkFlow](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/d590e7b8-9565-4f93-a132-dee8034102f3)
 
 ### Visualize word context and semantic correlation
 
