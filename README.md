@@ -9,6 +9,9 @@
 ![output](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/a733f7c7-0c3c-4b89-a4da-b75a4c616b6c)
 
 
+### Ploting learning curves LSTM for sentiment analysis:
+![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/14d6044e-8480-412d-b057-ba0d9b6acced)
+
 
 ### Data Information:
 
