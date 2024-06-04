@@ -13,6 +13,9 @@
 ![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/14d6044e-8480-412d-b057-ba0d9b6acced)
 
 
+### Ploting learning curves Hybrid CNN with LSTM for sentiment analysis:
+![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/cffe57cd-0338-4207-bb12-a213c706f330)
+
 ### Data Information:
 
 - **Train Data:** 7,786 samples
