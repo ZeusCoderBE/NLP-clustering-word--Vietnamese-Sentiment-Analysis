@@ -20,8 +20,6 @@ class DataPreprocessing:
         comment=self.generate.texts_to_sequences([comment])
         comment=pad_sequences(comment,maxlen=151,padding='pre')
         return comment
-    def normalize_numbers(self,comment):
-        return re.sub(r'\d+', 'number', comment)
     def remove_repeated_words(self,comment):
         words = comment.split()
         new_words = []
@@ -31,11 +29,9 @@ class DataPreprocessing:
         return ' '.join(new_words)
     def fit_transform(self,comment):
         comment=self.remove_punctuation(comment.lower())
-        comment=self.normalize_numbers(comment)
-        comment=self.remove_stopword(comment)
         comment=ViTokenizer.tokenize(comment)
+        comment=self.remove_stopword(comment)
         comment=[self.remove_repeated_words(comment)]
-        print(comment)
         comment=self.WordSeparation(comment)
         comment=self.Padding(comment,131)
         return comment
