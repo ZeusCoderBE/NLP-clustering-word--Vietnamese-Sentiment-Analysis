@@ -1,6 +1,6 @@
 ### Workflow: Applying artificial neural networks to build models to analyze customer emotions based on comments and evaluation serves for determination business-related trends
 
-![WorkFlow](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/d590e7b8-9565-4f93-a132-dee8034102f3)
+![workflow](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/07f725cc-ff77-4909-a9bd-62265e478cb9)
 
 
 ### Visualize word context and semantic correlation
@@ -9,23 +9,12 @@
 ![output](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/a733f7c7-0c3c-4b89-a4da-b75a4c616b6c)
 
 
-### Tasks:
+### Ploting learning curves LSTM for sentiment analysis:
+![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/14d6044e-8480-412d-b057-ba0d9b6acced)
 
-1. **Vietnamese Sentiment Analysis using CNN**
-   - **Responsible Person:** Huỳnh Gia Hân
-   - **Model:** Artificial Neural Network (CNN+LSTM,Data visualization(python))
-   
-2. **Vietnamese Sentiment Analysis using RNN/LSTM**
-   - **Responsible Person:** Đặng Nguyễn Quang Huy
-   - **Model:** Artificial Neural Network (RNN/LSTM,Data Preprocessing,EDA(power BI))
-   
-3. **Clustering Words Based on Context using ANN**
-   - **Responsible Person:** Đái Triệu Phi
-   - **Model:** Artificial Neural Network (ANN)
-   
-4. **Regression Model**
-   - **Responsible Person:** Nguyễn Trọng Dũng
-   - **Tasks:** Exploratory Data Analysis, Data Visualization, Data Preprocessing, Model Building
+
+### Ploting learning curves Hybrid CNN with LSTM for sentiment analysis:
+![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/cffe57cd-0338-4207-bb12-a213c706f330)
 
 ### Data Information:
 
