@@ -21,7 +21,8 @@
 
 ##### 1.The chart shows customers' ratings of products over time
 
-<img width="780" alt="image" src="https://github.com/user-attachments/assets/a32a875d-098e-46d7-a9fa-80cf10df64f4">
+<img width="772" alt="image" src="https://github.com/user-attachments/assets/d55d4c32-9087-4a10-8a34-250239bb6930">
+
 
 
 ###### Based on the chart above, in the years from early 2017 to early 2019, customer reviews for products were quite high, averaging about 4.5. But between mid-2019 and the end of 2020, average reviews dropped alarmingly, demonstrating that customers are very dissatisfied with the quality of our products or services. It is necessary to urgently re-check product or service quality management steps to improve the situation
@@ -31,6 +32,18 @@
 <img width="867" alt="image" src="https://github.com/user-attachments/assets/14c48267-2905-4ddb-9ff0-6217c11d7c6b">
 
 ###### We can see that the number of Positive Reviews is always more than other categories. Another notable point is that from early 2019 to mid-2020, the number of classified ad reviews increased rapidly, meaning the number of customers skyrocketed during that time.
+
+##### 3.The line graph shows the number of reviews for each status by word count
+
+![image](https://github.com/user-attachments/assets/1b365a85-5edf-4b21-ac52-6d372ef71e08)
+
+###### It is observed that users tend to use less than 40 words to rate. The number of Positive reviews is always higher than Negative, this is a good sign for the product business.
+
+##### 4.The heatmap chart represents the correlation matrix for the columns positive count, negative count, neutral_count, n_star
+
+![image](https://github.com/user-attachments/assets/7042acaf-7c98-4e6f-8171-3eb79e22d149)
+
+##### The chart shows that the positive_count value is positively correlated with n_star (correlation index 0.65), meaning that in user reviews, the higher the number of positive_count words, the higher the likelihood that that user will give a high rating. On the contrary, the negative_count value is negatively correlated with n_star (correlation index -0.69), meaning that in user reviews, the more negative_count words there are, the lower the rating will be.
 
 ### IV.Visualize word context and semantic correlation
 
