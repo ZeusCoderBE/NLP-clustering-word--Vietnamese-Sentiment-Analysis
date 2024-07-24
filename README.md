@@ -21,7 +21,8 @@
 
 ##### 1.The chart shows customers' ratings of products over time
 
-<img width="772" alt="image" src="https://github.com/user-attachments/assets/d55d4c32-9087-4a10-8a34-250239bb6930">
+<img width="750" alt="image" src="https://github.com/user-attachments/assets/05fad310-6f22-4692-ab33-047dfb1157a9">
+
 
 
 
@@ -29,7 +30,7 @@
 
 ##### 2.The chart shows the number of labels evaluated over time
 
-<img width="867" alt="image" src="https://github.com/user-attachments/assets/14c48267-2905-4ddb-9ff0-6217c11d7c6b">
+<<img width="767" alt="image" src="https://github.com/user-attachments/assets/a3dfc50c-53da-44fa-ab6e-04c7c74cf440">
 
 ###### We can see that the number of Positive Reviews is always more than other categories. Another notable point is that from early 2019 to mid-2020, the number of classified ad reviews increased rapidly, meaning the number of customers skyrocketed during that time.
 
