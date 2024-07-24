@@ -2,6 +2,11 @@
 
 ![workflow](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/07f725cc-ff77-4909-a9bd-62265e478cb9)
 
+### Inferential analysis and exploratory analysis
+
+##### First we need to know what reviews customers have had for the product recently. Apply a line chart with the horizontal axis being the time value and the vertical axis being the average value of the number of stars
+
+![image](https://github.com/user-attachments/assets/9e5f0886-c14a-47b3-8bbf-33e7b6a1000d)
 
 ### Visualize word context and semantic correlation
 
