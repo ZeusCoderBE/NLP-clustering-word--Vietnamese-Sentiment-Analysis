@@ -48,11 +48,14 @@
 
 ### IV.Visualize word context and semantic correlation
 
-### V.Ploting learning curves LSTM for sentiment analysis:
+### 5.1.Ploting learning curves BERT-fine-tuned for sentiment analysis:
+![image](https://github.com/user-attachments/assets/7fbb5e93-e7e5-418d-aedc-ded96990e06e)
+
+### 5.2.Ploting learning curves LSTM for sentiment analysis:
 ![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/14d6044e-8480-412d-b057-ba0d9b6acced)
 
 
-### VI.Ploting learning curves Hybrid CNN with LSTM for sentiment analysis:
+### 5.3.Ploting learning curves Hybrid CNN with LSTM for sentiment analysis:
 ![image](https://github.com/ZeusCoderBE/NLP-clustering-word--Vietnamese-Sentiment-Analysis/assets/117000361/cffe57cd-0338-4207-bb12-a213c706f330)
 
 
